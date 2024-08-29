@@ -7,6 +7,7 @@ import About from './pages/About';
 import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
+import Category from './pages/Category';
 
 
 function App() {
@@ -19,14 +20,13 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
-            <Route path='' element={<s />} />
-            <Route path="/aotFound" element={<NotFound />} />
+            <Route path="/category/:name" element={<Category />} />
+            <Route path="/notFound" element={<NotFound />} />
           </Routes>
-
         </main>
         <Footer />
       </Router>
-    </div>
+    </div >
   )
 }
 
