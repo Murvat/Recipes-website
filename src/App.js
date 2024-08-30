@@ -8,6 +8,7 @@ import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Category from './pages/Category';
+import Recipe from './pages/Recipe'
 
 
 function App() {
@@ -17,10 +18,11 @@ function App() {
         <Header />
         <main className="container content">
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/home" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/category/:name" element={<Category />} />
+            <Route path="/meal/:id" element={<Recipe />} />
             <Route path="/notFound" element={<NotFound />} />
           </Routes>
         </main>
