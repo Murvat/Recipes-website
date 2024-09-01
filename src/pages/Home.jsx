@@ -23,7 +23,7 @@ const Home = () => {
             search: `?search=${str}`,
         });
     };
-
+    ///
     useEffect(() => {
         getAllCategories().then((data) => {
             setCatalog(data.categories);
